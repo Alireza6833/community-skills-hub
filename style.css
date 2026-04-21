@@ -237,3 +237,24 @@ h2 {
 .button:hover {
   background: #e6f2ff;
 }
+/* Courses cards */
+.course-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.course-card h3 {
+  color: #0b5fa5;
+}
+
+.course-card p {
+  color: #555;
+}
