@@ -258,3 +258,11 @@ h2 {
 .course-card p {
   color: #555;
 }
+.hero h2 {
+  color: white;
+  font-size: 28px;
+}
+
+.hero p {
+  color: #f0f0f0;
+}
