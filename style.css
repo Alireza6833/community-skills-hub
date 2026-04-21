@@ -297,3 +297,9 @@ h2 {
   background: #0b5fa5;
   color: white;
 }
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.45); /* کمتر تیره */
+  backdrop-filter: blur(6px);      /* افکت شیشه‌ای */
+  border-radius: 12px;
+  max-width: 500px;
+}
