@@ -42,14 +42,16 @@ nav a:hover,
 nav a:focus {
   text-decoration: underline;
 }
-
 .hero {
-  background: white;
+  background-image: url("https://images.unsplash.com/photo-1498050108023-c5249f4df085");
+  background-size: cover;
+  background-position: center;
   padding: 50px 20px;
   margin: 25px 0;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
+
 
 .hero h2 {
   margin-top: 0;
