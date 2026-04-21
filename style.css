@@ -266,3 +266,14 @@ h2 {
 .hero p {
   color: #f0f0f0;
 }
+.hero-overlay h2 {
+  color: white;
+  font-weight: bold;
+}
+
+.hero-overlay p {
+  color: #f1f1f1;
+}
+  .hero-overlay {
+  background: rgba(0, 0, 0, 0.6);
+}
