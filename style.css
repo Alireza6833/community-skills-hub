@@ -217,3 +217,23 @@ nav a {
 h2 {
   color: #0b5fa5;
 }
+.hero {
+  background: linear-gradient(135deg, #0b5fa5, #4da3ff);
+  color: white;
+  padding: 40px 25px;
+  border-radius: 15px;
+}
+
+.hero p {
+  color: #e6f2ff;
+}
+
+.button {
+  background: white;
+  color: #0b5fa5;
+  font-weight: bold;
+}
+
+.button:hover {
+  background: #e6f2ff;
+}
