@@ -289,3 +289,20 @@ ul {
     max-width: 100% !important;
   }
 }
+header {
+  background: #0b5fa5 !important;
+  color: white !important;
+  padding: 18px 0;
+}
+
+.site-title {
+  color: white !important;
+  margin: 0;
+}
+
+nav a {
+  color: white !important;
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
