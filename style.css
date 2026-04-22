@@ -5,86 +5,231 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f7f9fc;
+  line-height: 1.6;
+  background: #f3f5f9;
   color: #222;
 }
 
-/* HEADER */
 header {
   background: #0b5fa5;
   color: white;
-  padding: 18px 0;
+  padding: 24px 0 20px;
   text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+nav {
+  margin-top: 14px;
 }
 
 nav a {
   color: white;
-  margin: 0 10px;
   text-decoration: none;
   font-weight: bold;
+  margin: 0 12px;
+  font-size: 1.1rem;
 }
 
-/* CONTAINER */
 .container {
   width: 90%;
   max-width: 1000px;
-  margin: 20px auto;
+  margin: 24px auto;
 }
 
-/* HERO */
 .hero {
-  background-image: url("Untitled%20design.png?v=10");
+  position: relative;
+  overflow: hidden;
+  background-image: url("Untitled%20design.png?v=20");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 20px;
-  padding: 40px;
-  min-height: 300px;
-  display: flex;
-  align-items: center;
+  min-height: 360px;
+  border-radius: 22px;
+  padding: 36px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
-/* OVERLAY */
+.hero::before {
+  content: "";
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  bottom: 24px;
+  width: min(52%, 520px);
+  background: rgba(255, 255, 255, 0.74);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 18px;
+  z-index: 0;
+}
+
+.hero > *,
 .hero-overlay {
-  background: rgba(0, 0, 0, 0.35);
-  padding: 25px;
-  border-radius: 15px;
-  max-width: 500px;
+  position: relative;
+  z-index: 1;
 }
 
+.hero-overlay {
+  background: none !important;
+  padding: 0 !important;
+  max-width: 48% !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+.hero h2,
 .hero-overlay h2 {
-  color: white;
-  font-size: 28px;
-  margin-bottom: 15px;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+  margin: 0 0 16px 0;
+  max-width: 48%;
+  color: #111 !important;
+  font-size: 3rem;
+  line-height: 1.08;
+  font-weight: 800;
+  text-shadow: none !important;
 }
 
+.hero p,
 .hero-overlay p {
-  color: #f1f1f1;
-  margin-bottom: 20px;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+  margin: 0 0 22px 0;
+  max-width: 48%;
+  color: #222 !important;
+  font-size: 1.1rem;
+  line-height: 1.55;
+  text-shadow: none !important;
 }
 
-/* BUTTON */
-.button {
+.button,
+.hero .button,
+.hero-overlay .button {
+  display: inline-block;
+  background: #ffffff;
+  color: #0b5fa5 !important;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 14px 24px;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(11, 95, 165, 0.16);
+  transition: 0.25s;
+}
+
+.button:hover,
+.hero .button:hover,
+.hero-overlay .button:hover {
+  background: #0b5fa5;
+  color: white !important;
+}
+
+.section,
+.card,
+.contact-box,
+form {
+  background: #eef2f7;
+  border-radius: 18px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+.section h2,
+.card h3,
+.contact-box h2,
+form h2 {
+  color: #0b5fa5;
+  margin-top: 0;
+}
+
+.card {
+  border-left: 6px solid #0b5fa5;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #cfd7e3;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
+
+textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+ul {
+  padding-left: 22px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+}
+
+.skip-link:focus {
+  left: 12px;
+  top: 12px;
+  z-index: 999;
   background: white;
   color: #0b5fa5;
-  padding: 12px 20px;
+  padding: 10px 14px;
   border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
 }
 
-.button:hover {
-  background: #0b5fa5;
-  color: white;
-}
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.9rem;
+  }
 
-/* CARDS */
-.card {
-  background: #e9edf2;
-  padding: 20px;
-  border-radius: 15px;
-  margin-bottom: 20px;
-  border-left: 6px solid #0b5fa5;
+  nav a {
+    display: inline-block;
+    margin: 6px 10px;
+  }
+
+  .hero {
+    min-height: 300px;
+    padding: 22px;
+  }
+
+  .hero::before {
+    left: 16px;
+    right: 16px;
+    width: auto;
+    top: 16px;
+    bottom: 16px;
+  }
+
+  .hero h2,
+  .hero p,
+  .hero-overlay,
+  .hero-overlay h2,
+  .hero-overlay p {
+    max-width: 100% !important;
+  }
+
+  .hero h2,
+  .hero-overlay h2 {
+    font-size: 2.2rem;
+  }
+
+  .hero p,
+  .hero-overlay p {
+    font-size: 1rem;
+  }
 }
