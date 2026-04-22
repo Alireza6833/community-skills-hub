@@ -232,3 +232,65 @@ footer {
     font-size: 1rem;
   }
 }
+/* FINAL HERO RESET */
+
+.hero {
+  background: #eef2f7 !important;
+  background-image: none !important;
+  min-height: auto !important;
+  padding: 28px !important;
+  border-radius: 18px !important;
+  display: block !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05) !important;
+}
+
+.hero::before {
+  display: none !important;
+  content: none !important;
+}
+
+.hero-overlay {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  padding: 0 !important;
+  max-width: 100% !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+.hero h2,
+.hero-overlay h2 {
+  color: #0b5fa5 !important;
+  font-size: 2.2rem !important;
+  line-height: 1.15 !important;
+  margin: 0 0 14px 0 !important;
+  text-shadow: none !important;
+}
+
+.hero p,
+.hero-overlay p {
+  color: #222 !important;
+  font-size: 1.05rem !important;
+  line-height: 1.6 !important;
+  margin: 0 0 16px 0 !important;
+  text-shadow: none !important;
+}
+
+.hero .button,
+.hero-overlay .button {
+  display: inline-block !important;
+  background: #0b5fa5 !important;
+  color: white !important;
+  text-decoration: none !important;
+  padding: 12px 20px !important;
+  border-radius: 10px !important;
+  font-weight: bold !important;
+  box-shadow: none !important;
+}
+
+.hero .button:hover,
+.hero-overlay .button:hover {
+  background: #084a86 !important;
+  color: white !important;
+}
