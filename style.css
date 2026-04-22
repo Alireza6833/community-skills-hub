@@ -294,3 +294,58 @@ footer {
   background: #084a86 !important;
   color: white !important;
 }
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  position: relative;
+  transition: 0.3s;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+.button {
+  transition: 0.25s;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+.card {
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+.section {
+  animation: fadeUp 0.6s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
