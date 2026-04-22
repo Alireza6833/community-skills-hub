@@ -295,12 +295,14 @@ h2 {
   color: white;
 }
 .hero-overlay {
-  background: rgba(0, 0, 0, 0.45); /* کمتر تیره */
-  backdrop-filter: blur(6px);      /* افکت شیشه‌ای */
+  background: rgba(0, 0, 0, 0.45); 
+  backdrop-filter: blur(6px);      
   border-radius: 12px;
   max-width: 500px;
 }
 .hero {
-  background: url("https://images.unsplash.com/photo-1519389950473-47ba0277781c") center/cover no-repeat !important;
+  background: url("https://images.unsplash.com/photo-1498050108023-c5249f4df085");
+  background-size: cover;
+  background-position: center;
 }
-.hero { background: url("https://images.pexels.com/photos/1181359/pexels-photo-1181359.jpeg") center/cover no-repeat !important; }
+
