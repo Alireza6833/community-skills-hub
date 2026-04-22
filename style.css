@@ -201,10 +201,7 @@ nav a {
     width: 90%;
   }
 }
-.hero {
-  background: linear-gradient(135deg, #ffffff, #eaf3ff);
-  border: 2px solid #d6e6f8;
-}
+
 
 .button {
   box-shadow: 0 6px 14px rgba(11, 95, 165, 0.25);
